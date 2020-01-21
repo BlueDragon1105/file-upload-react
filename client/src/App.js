@@ -21,7 +21,7 @@ function App() {
         formData.append('file', file.current.files[0]);
         axios({
             method: 'post',
-            url: 'http://localhost:5000/api/test/sendFormData',
+            url: 'http://localhost:6000/api/test/sendFormData',
             data: formData,
             headers: {'Content-Type': 'multipart/form-data' }
         })
